@@ -1,0 +1,19 @@
+.content {
+    width: 90%;
+    margin: 1.4rem auto auto auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title h1 {
+    font-size: 2rem;
+    color: rgb(248, 248, 246);
+    font-weight: 500px;
+}
+
+.table {
+    width: 100%;
+}
