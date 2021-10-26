@@ -14,6 +14,30 @@
     font-weight: 500px;
 }
 
+button {
+    margin-bottom: .8rem;
+    color: maroon;
+}
+
 .table {
     width: 100%;
+}
+
+.usuarios {
+    color:rgb(7, 73, 73);
+    margin-left: .6rem;
+}
+
+.edit {
+    color: darkgreen;
+    margin-right: .5rem;
+}
+
+.delete {
+    color: firebrick;
+    margin-left: .5rem;
+}
+
+.mat-header {
+    width: 5rem;
 }
