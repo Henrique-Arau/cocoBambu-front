@@ -1,12 +1,12 @@
 <div class="content">
     <div class="title">
-        <h1>Categoria</h1>
+        <h1>LISTA DE USUARIOS</h1>
     </div>
 
-    <button class="mat-elevation-z8"(click)="navegarParaCategoriaCreate()" mat-stroked-button color="primary">Nova Categoria</button>
+    <button class="mat-elevation-z8" mat-stroked-button color="primary">Novo Usuario</button>
 
     <div class="mat-elevation-z8 content-table">
-        <table class="table" mat-table [dataSource]="categorias">
+        <table class="table" mat-table  [dataSource]="usuarios">
 
 
                 <!-- Position Column -->
@@ -16,22 +16,18 @@
                 </ng-container>
               
                 <!-- Name Column -->
-                <ng-container matColumnDef="nome">
-                  <th mat-header-cell *matHeaderCellDef> NOME </th>
-                  <td mat-cell *matCellDef="let row"> {{row.nome}} </td>
+                <ng-container matColumnDef="titulo">
+                  <th mat-header-cell *matHeaderCellDef> TITULO </th>
+                  <td mat-cell *matCellDef="let row"> {{row.titulo}} </td>
                 </ng-container>
               
-                <!-- Weight Column -->
-                <ng-container matColumnDef="descricao">
-                  <th mat-header-cell *matHeaderCellDef> DESCRIÇÂO </th>
-                  <td mat-cell *matCellDef="let row"> {{row.descricao}} </td>
-                </ng-container>
+               
 
                  <!-- Usuarios Column -->
                  <ng-container matColumnDef="usuarios">
-                  <th mat-header-cell *matHeaderCellDef> USUARIOS </th>
+                  <th mat-header-cell *matHeaderCellDef> VER USUARIOS </th>
                   <td mat-cell *matCellDef="let row"> 
-                    <a class="usuarios" routerLink="{{ row.id}}/usuarios">
+                    <a class="usuarios" >
                       <i  class="material-icons">account_box</i>
                     </a>
                     
@@ -42,10 +38,10 @@
                 <ng-container matColumnDef="acoes">
                   <th class="mat-header" mat-header-cell *matHeaderCellDef> AÇÕES </th>
                   <td mat-cell *matCellDef="let row"> 
-                    <a class="edit" routerLink="update/{{ row.id }}">
+                    <a class="edit" href="#">
                       <i class="material-icons">edit</i>
                     </a>
-                    <a class="delete" routerLink="delete/{{ row.id }}">
+                    <a class="delete" href="#">
                       <i class="material-icons">delete</i>
                     </a>
                   </td>
@@ -57,9 +53,3 @@
 
     </div>
     </div>
-
-    
-      
-    
-      
-

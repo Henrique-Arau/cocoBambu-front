@@ -1,0 +1,43 @@
+.content {
+    width: 90%;
+    margin: 1.4rem auto auto auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title h1 {
+    font-size: 2rem;
+    color: rgb(5, 5, 1);
+    font-weight: 500px;
+}
+
+button {
+    margin-bottom: .8rem;
+    color: rgb(20, 3, 3);
+}
+
+.table {
+    width: 100%;
+}
+
+.usuarios {
+    color:rgb(7, 73, 73);
+    margin-left: .6rem;
+}
+
+.edit {
+    color: darkgreen;
+    margin-right: .5rem;
+}
+
+.delete {
+    color: firebrick;
+    margin-left: .5rem;
+}
+
+.mat-header {
+    width: 5rem;
+}
