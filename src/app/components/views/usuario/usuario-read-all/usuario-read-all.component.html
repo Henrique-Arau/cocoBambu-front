@@ -27,7 +27,7 @@
                  <ng-container matColumnDef="usuarios">
                   <th mat-header-cell *matHeaderCellDef> VER USUARIOS </th>
                   <td mat-cell *matCellDef="let row"> 
-                    <a class="usuarios" >
+                    <a class="usuarios" routerLink="{{ row.id }}/read" > 
                       <i  class="material-icons">account_box</i>
                     </a>
                     

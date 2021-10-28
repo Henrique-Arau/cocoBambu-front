@@ -8,6 +8,7 @@ import { HomeComponent } from './components/views/home/home.component';
 import { UsuarioCreateComponent } from './components/views/usuario/usuario-create/usuario-create.component';
 import { UsuarioDeleteComponent } from './components/views/usuario/usuario-delete/usuario-delete.component';
 import { UsuarioReadAllComponent } from './components/views/usuario/usuario-read-all/usuario-read-all.component';
+import { UsuarioReadComponent } from './components/views/usuario/usuario-read/usuario-read.component';
 import { UsuarioUpdateComponent } from './components/views/usuario/usuario-update/usuario-update.component';
 
 const routes: Routes = [
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'categorias/:id_cat/usuarios/:id/delete',
     component: UsuarioDeleteComponent
+  },
+  {
+    path: 'categorias/:id_cat/usuarios/:id/read',
+    component: UsuarioReadComponent
   }
 
 ];
