@@ -22,13 +22,15 @@ import {MatTableModule} from '@angular/material/table';
 
 import {MatButtonModule} from '@angular/material/button';
 import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
-import { FormsModule} from "@angular/forms";
+import { FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 import { UsuarioReadAllComponent } from './components/views/usuario/usuario-read-all/usuario-read-all.component';
+import { UsuarioCreateComponent } from './components/views/usuario/usuario-create/usuario-create.component';
+import { UsuarioUpdateComponent } from './components/views/usuario/usuario-update/usuario-update.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { UsuarioReadAllComponent } from './components/views/usuario/usuario-read
     CategoriaDeleteComponent,
     CategoriaUpdateComponent,
     UsuarioReadAllComponent,
+    UsuarioCreateComponent,
+    UsuarioUpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,7 +62,8 @@ import { UsuarioReadAllComponent } from './components/views/usuario/usuario-read
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
