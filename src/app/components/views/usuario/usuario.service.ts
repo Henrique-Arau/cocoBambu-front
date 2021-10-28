@@ -30,12 +30,16 @@ export class UsuarioService {
     return this.http.put<Usuario>(url, usuario)
   }
 
-  
-  
+
 
   create(usuario: Usuario, id_cat: String): Observable<Usuario> {
     const url = `${this.baseUrl}/usuarios?categoria=${id_cat}`
     return this.http.post<Usuario>(url, usuario)
+  }
+
+  delete(id: String):Observable<void> {
+    const url = `${this.baseUrl}/usuarios/${id}`
+    return this.http.delete<void>(url)
   }
 
   mensagem(str: String): void {

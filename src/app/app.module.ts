@@ -31,6 +31,7 @@ import { CategoriaUpdateComponent } from './components/views/categoria/categoria
 import { UsuarioReadAllComponent } from './components/views/usuario/usuario-read-all/usuario-read-all.component';
 import { UsuarioCreateComponent } from './components/views/usuario/usuario-create/usuario-create.component';
 import { UsuarioUpdateComponent } from './components/views/usuario/usuario-update/usuario-update.component';
+import { UsuarioDeleteComponent } from './components/views/usuario/usuario-delete/usuario-delete.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { UsuarioUpdateComponent } from './components/views/usuario/usuario-updat
     UsuarioReadAllComponent,
     UsuarioCreateComponent,
     UsuarioUpdateComponent,
+    UsuarioDeleteComponent,
   ],
   imports: [
     BrowserModule,
